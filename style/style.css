@@ -1,0 +1,99 @@
+@font-face {
+	font-family:Streetwear;
+	src:url(../fonts/Streetwear.otf);
+}
+
+@font-face {
+	font-family:Cambo;
+	src:url(../fonts/Cambo-Regular.otf);
+}
+
+@font-face {
+	font-family: Source;
+	src:url(../fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+	font-family: "Glyphicons Halflings";
+	src:url(deps/glyphicons/glyphicons-halflings-regular.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#headerContainer{
+    background-color: #EF4036;
+}
+
+#headerContainer #title{
+    color: #FFF;
+    font-family: Streetwear;
+    text-align: center;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0 !important;
+    line-height: normal;
+}
+
+#strike-after{
+	width: 70%;
+	display: block;
+	margin: 0px auto;
+	margin-top: 20px;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.quoteContainer{
+    width: 40%;
+    margin: 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.quoteContainer .quote{
+    font-family: Cambo;
+    font-size: 26px;
+    display: block;
+}
+
+.quoteContainer .quote:before{
+    content: '„';
+    font-size: 34px;
+    margin-right: 3.5px;
+}
+
+.quoteContainer .quote:after{
+    content: '“';
+    font-size: 34px;
+    margin-left: 3.5px;
+}
+
+.quoteContainer .author{
+    font-family: Source;
+    font-size: 14px;
+    font-weight: lighter;
+	margin-top: 10px;
+	color: #666;
+	font-style: italic;
+}
+
+.quoteContainer .strike{
+	border-bottom: 1px solid #b2b2b2;
+	display: block;
+	width: 35%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+
+#newQuoteForm{
+    margin: 0px auto;
+}
+
+#addQuoteBtn{
+    left: 50%;
+    position: relative;
+    margin-left: -56px;
+    margin-top: 10px;
+}
