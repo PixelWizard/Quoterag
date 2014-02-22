@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Quoterag</title>
-        <link rel="stylesheet" href="style/deps/bootstrap.min.css" />
-        <link rel="stylesheet" href="style/style.css" />
-        <script src="javascript/deps/jquery-1.11.0.min.js"></script>
-        <script src="javascript/deps/angular.min.js"></script>
-        <script src="javascript/deps/bootstrap.min.js"></script>
-        <script src="javascript/app.js"></script>
+        <link rel="stylesheet" href="public/style/deps/bootstrap.min.css" />
+        <link rel="stylesheet" href="public/style/style.css" />
+        <script src="public/javascript/deps/jquery-1.11.0.min.js"></script>
+        <script src="public/javascript/deps/angular.min.js"></script>
+        <script src="public/javascript/deps/bootstrap.min.js"></script>
+        <script src="public/javascript/app.js"></script>
     </head>
     <body>
         <div id="headerContainer">
