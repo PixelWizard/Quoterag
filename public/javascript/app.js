@@ -14,7 +14,10 @@ function quoteControl($scope, $http){
         });
     
     $scope.addQuote = function(){
-        $.post( "index.php", { quote: $scope.quoteInput, author: $scope.authorInput, quoteyear: $scope.quoteyearInput})
+        var apival = "true";
+        var typeval = "setQuotes";
+
+        $.post( "index.php", { api: apival, type: typeval, quote: $scope.quoteInput, author: $scope.authorInput, quoteyear: $scope.quoteyearInput})
             .done(function( data ) {
 
             });
