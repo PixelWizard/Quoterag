@@ -19,7 +19,7 @@
 		//Methoden
 		public function QuoteToDB()
 		{	
-			if(/*!preg_match('/[^A-Za-z0-9?!.,öäüÖÄÜÖéè]/', $this->m_Quote) && !preg_match('/[^A-Za-z0-9öäüÖÄÜéè]/', $this->m_Author) && !preg_match('/[^0-9]/', $this->m_Quoteyear)*/1==1) // REGEX b^.^d
+			if(!preg_match('/[^A-Za-z0-9?!.,öäüÖÄÜÖéè]/', $this->m_Quote) && !preg_match('/[^A-Za-z0-9öäüÖÄÜéè]/', $this->m_Author) && !preg_match('/[^0-9]/', $this->m_Quoteyear)) // REGEX b^.^d
 			{
 			  	$s = sql::AddQuote($this->m_Quote, $this->m_Author, $this->m_Quoteyear);
 			  	if ($s == true){return true;}
