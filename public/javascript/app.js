@@ -2,7 +2,7 @@ function quoteControl($scope, $http){
      
     $scope.quotelist = new Array();
 
-    $http.get('index.php?api=getAllQuotes')
+    $http.get('index.php?api=true&type=getQuotes&code=all')
         .success(function (data) {
             $.each(data, function(index, val){
             $scope.quotelist[index] = {quote: val.f_quote, author: val.f_author, quoteyear: val.f_quoteyear};
@@ -14,7 +14,10 @@ function quoteControl($scope, $http){
         });
     
     $scope.addQuote = function(){
-        $.post( "index.php", { quote: $scope.quoteInput, author: $scope.authorInput, quoteyear: $scope.quoteyearInput})
+        var apival = "true";
+        var typeval = "setQuotes";
+
+        $.post( "index.php", { api: apival, type: typeval, quote: $scope.quoteInput, author: $scope.authorInput, quoteyear: $scope.quoteyearInput})
             .done(function( data ) {
 
             });
